@@ -9,9 +9,10 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        serif: ['Oranienbaum', 'serif'],
-      },     
+        'heading': ['TanMonCheri', 'sans-serif'],
+        body: ['Raleway', 'sans-serif'],
+
+      },    
 
       extend: {
         spacing: {
@@ -38,13 +39,11 @@ module.exports = {
       themes: [
         {
           mytheme: {
-            "primary": "#76867A",    // Misty Moss, Shade: #5B6563, Tint: #C4CDCB
-            "secondary": "#846B87",  // Lavender Shadow, Shade: #67505A, Tint: #A897A4
-            "base-100": "#EDEEF1",   // Ethereal Mist Tint
-            "base-200": "#E6E3EE",   // Ethereal Mist
-            "base-300": "#B3B1B8",   // Ethereal Mist Shade
-            "neutral": "#314641",    // Forest Depths, Shade: #1D2D2B, Tint: #5A6D6B
-            "accent": "#DAA520",     // Goldenrod, Shade: #B78A1D, Tint: #EDC857
+            "primary": "#6C128E",    // Dark Purple
+            "secondary": "#C55528",  // Orange
+            "base-100": "#F7E8FD",   // Light Purple
+            "neutral": "#986B8D",    // Nuetral Purple
+            "accent": "#EDB41E",     // Yellow
           },
         },
       ],

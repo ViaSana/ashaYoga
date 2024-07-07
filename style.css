@@ -3,33 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Fonts */
+@font-face {
+    font-family: 'TanMonCheri';
+    src:    url('/assets/fonts/TanMonCheri.woff2') format('woff2'),
+            url('/assets/fonts/TanMonCheri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ----------- Default Styles to apply to the whole project  --------- */
-
 @layer base {
 
-    html, body {
-        @apply overflow-x-hidden max-w-[100vw] scroll-smooth;        
+    html {
+        @apply scroll-smooth;        
+    }
+    body {
+        @apply overflow-x-hidden max-w-[100vw] font-body;
     }
 
-    h1, h2, h3, h4  {
-        @apply font-serif mb-[0.5em];
+    h1, h2  {
+        @apply font-heading;
     }
 
     h1 {
-        @apply leading-tight text-8xl;
-    }
-    h2 {
-        @apply text-2xl leading-tight;
-    }
-    h3 {
-        @apply text-xl leading-tight;
-    }
-    h4 {
-        @apply font-sans text-lg leading-tight;
+        @apply text-4xl;
     }
     p {
-        @apply mb-[0.5em] leading-normal;
+        @apply leading-normal;
     }
     nav a {
         @apply pr-4 tracking-wide uppercase;
