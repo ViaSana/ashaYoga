@@ -1,28 +1,41 @@
 <header class="absolute top-0 left-0 right-0 flex items-center justify-between max-w-screen-xl py-8 mx-auto text-left px-5p">
-        <h2 class="mb-0 text-2xl">
-            <a href="/">The Yoga Studio</a> 
-        </h2>
+    <h2 class="mb-0 text-2xl">
+        <a href="/" class="font-heading">Asha Yoga</a> 
+    </h2>
 
-        <!-- Normal Menu -->
-        <nav class="py-4 max-md:hidden md:p-0">
-            <a href="/classes.html">Our Classes</a>
-            <a href="/schedule.html">Schedule</a>
-            <a class="pr-0" href="/contact.html">Contact</a>
-        </nav>
+    <!-- Normal Menu -->
+    <nav class="items-center justify-between hidden py-4 space-x-8 md:p-0 md:flex">
+        {% for i in site.data.nav %}
+            <a href="{{ i.url }}">{{ i.title }}</a>
+        {% endfor %}
+    </nav>
 
-        <!-- Burger Menu -->
-        <div class="absolute flex items-center justify-center w-12 h-12 rounded-full cursor-pointer md:hidden sm:top-5 top-16 right-5p burger-button bg-light">
-            <nav class="absolute w-0 h-12 overflow-hidden rounded-l-full opacity-0 bg-light burger-menu right-6">
-                <a href="/classes" class="opacity-0 px-2 py-[12px] inline-block">Classes</a>
-                <a href="/schedule" class="opacity-0 px-2 py-[12px] inline-block">Schedule</a>
-                <a href="/contact" class="opacity-0 px-2 py-[12px] inline-block">Contact</a>
-            </nav>
-            <div class="relative rotate-90 burger-line">
-                <div class="space-y-2">
-                    <div class="w-8 h-0.5 bg-copper"></div>
-                    <div class="w-8 h-0.5 bg-copper"></div>
-                    <div class="w-8 h-0.5 bg-copper"></div>
-                </div>
+
+    <!-- Mobile Menu -- works w/ main.js + .hamburger-button, .mobile-menu + DaisyUI -->
+    <div class="flex w-full py-2 md:hidden">
+        <div class="flex items-center justify-end pr-2 ml-auto">
+            
+            <div class="relative z-50 space-y-2">
+                <!-- Hamburger -->
+                <label class="shadow-none btn btn-circle swap swap-rotate">
+                    <!-- this hidden checkbox controls the state --><input type="checkbox" />
+                
+                    <!-- hamburger icon -->
+                    <svg class="fill-accent swap-off hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                    
+                    <!-- close icon -->
+                    <svg class="fill-accent swap-on hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                </label>
             </div>
         </div>
+        <div class="z-40 shadow-lg mobile-menu">
+            <nav class="text-center mt-28">
+                {% for i in site.data.nav %}
+                <div class="block my-6">
+                    <a class="btn w-[40%]" href="{{ i.url }}">{{ i.title }}</a>
+                </div>
+                {% endfor %}
+            </nav> 
+        </div>
+    </div>
 </header>

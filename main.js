@@ -1,47 +1,12 @@
+$('.hamburger-button').on("click", function(){
+  $('.mobile-menu').fadeToggle(100);
+});
+
+
 gsap.from( '.gsap-hide', { 
     x: '200px', 
     duration: 2 
   });
-
-// First we define our js variables 
-const burgerButton = document.querySelector('.burger-button')
-const burgerMenu = document.querySelector('.burger-menu')
-const burgerLines = document.querySelector('.burger-line')
-
-let tl = gsap.timeline({ duration:1, }
-    ).to(burgerMenu, {width: "23rem", opacity: 1, padding: '0 2rem',}
-    ).to('.burger-menu a', {opacity: 1,
-    stagger:.35
-    },.8)
-
-tl.pause();
-
-// then we start righting our new function
-function toggleBurgerMenu() {
-  
-  // here we check to see if the burger button has the class of active
-    if (burgerButton.classList.contains("active")){
-        // more consle.log for testing
-        console.log('Burger Button is active, DEACTIVATE')
-        
-        // remove the class of active
-        burgerButton.classList.remove("active")
-
-        tl.reverse()
-
-    } else {
-        // console for more testing
-        console.log('Burger Button ACTIVATE')
-        
-        // re-adds the class for tracking
-        burgerButton.classList.add("active")
-        // opens up the burger menu and does the opsite of the close
-        tl.play()
-    }
-}
-
-// finally link it to the click action of the burger button
-burgerButton.addEventListener('click', toggleBurgerMenu)
 
 // SCROLL JS //
 //  first we are finding all of the elements that have a class of scroll-in-from-bottom
@@ -50,7 +15,7 @@ const headings = document.querySelectorAll(".scroll-in-from-bottom")
 // for each of them we are going to attach a gsap animation ( like a jekyll for loop just in js :D )
 headings.forEach(object => {
 
-// we start with a gsap timeline
+  // we start with a gsap timeline
     let tl = gsap.timeline({
     // here's where we start attching the animation to the scroll
       scrollTrigger: {
@@ -69,4 +34,22 @@ headings.forEach(object => {
         y:300,
         opacity:0
     })
-})
+});
+
+
+// Cloud Cannon Editor Live Updates
+if (!window.CloudCannon) {
+  document.addEventListener('cloudcannon:load', function (e) {
+    onLiveEditorLoad(e.detail.CloudCannon);
+  });
+} else {
+  onLiveEditorLoad(window.CloudCannon);
+};
+
+function onLiveEditorLoad(CloudCannon) {
+  CloudCannon.enableEvents();
+};
+
+document.addEventListener('cloudcannon:update', async function (e) {
+  useNewPageProps(e.detail.CloudCannon);
+});
