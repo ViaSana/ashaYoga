@@ -21,16 +21,17 @@
     body {
         @apply overflow-x-hidden max-w-[100vw] font-body;
     }
-
     h1, h2  {
         @apply font-heading;
     }
-
     h1 {
         @apply text-4xl;
     }
+    h3 {
+        @apply text-2xl;
+    }
     p {
-        @apply leading-normal;
+        @apply text-base;
     }
     nav a {
         @apply pr-4 tracking-wide uppercase;
