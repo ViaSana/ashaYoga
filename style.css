@@ -51,6 +51,9 @@
     .button  {
         @apply inline-block px-4 py-2 tracking-wide uppercase border hover:border;
     }
+    .btn {
+        @apply px-8 pt-1 text-base uppercase rounded-none font-heading;
+    }
     
     /* Responsive menu */
     .mobile-menu {

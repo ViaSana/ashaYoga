@@ -12,12 +12,14 @@ heading: Our Classes
         {% for item in site.data.classes %}
             <div class="flex flex-col text-center border py-7 border-accent">
                 <img src="{{item.image}}" alt="Class Image" class="aspect-[6/5] mx-auto border border-accent scroll-in-from-bottom" />
-                <div class="flex-grow py-6">
+                <div class="py-6 grow">
                     <h2 class="pb-6 text-3xl uppercase">{{item.class}}</h2>
                     <hr class="w-full border-t border-accent">
                     <p class="px-4 pt-6 mb-0">{{item.description}}</p>
                 </div>
-                <a class="btn btn-primary" href="{{ item.link_url }}">Sign Up</a>
+                <div>
+                    <a class="btn btn-primary" href="{{ item.link_url }}">Sign Up</a>
+                </div>
             </div>
         {% endfor %}
         </div>
@@ -32,7 +34,7 @@ heading: Our Classes
     <div class="space-y-12">
         {% for event in site.data.events %}
         <div class="flex flex-col items-center p-6 border md:flex-row border-accent">
-            <img src="{{ event.image }}" alt="Event Image" class="mb-4 border md:w-1/3 border-accent md:mb-0 md:mr-6" />
+            <img src="{{ event.image }}" alt="Event Image" class="aspect-[10/9] mx-12 border md:w-1/4 border-accent" />
             <div class="text-left md:w-2/3">
                 <h2 class="mb-2 text-3xl uppercase">{{ event.heading }}</h2>
                 <p class="mb-2 text-lg"><strong>Date:</strong> {{ event.date }} | <strong>Cost:</strong> {{ event.cost }}</p>
