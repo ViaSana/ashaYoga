@@ -1,13 +1,20 @@
-class: 
-- name: Hot Yoga
-  pic: /assets/images/yoga-8.jpg
-  description: Sweat through 26 signature poses in a room heated to 105°F for a total body strengthening workout.
-- name: Mandala Yoga
-  pic: /assets/images/yoga-4.jpg
-  description: Align your chakras with a meditative sequence focused on geometric poses and spiritual mantras.
-- name: Chakra Flow 
-  pic: /assets/images/yoga-9.jpg
-  description: Open your chakras with a sequence of poses energizing each energy center through music and breathwork.
-- name: Vinyasa Flow
-  pic: /assets/images/yoga-9.jpg
-  description: Link movement and breath in a vigorous, dynamically sequenced practice generating internal heat.
+- class: Ashtanga
+  link_url:
+  image: /assets/images/class-ashtanga.png
+  description: A traditional practice focused on individualized instruction, perfect for all levels.
+- class: Hatha
+  link_url:
+  image: /assets/images/class-hatha.png
+  description: A balanced practice that emphasizes alignment and mindfulness, suitable for everyone.
+- class: Resorative 
+  link_url:
+  image: /assets/images/class-restore.png
+  description: A gentle, calming class that promotes deep relaxation and stress relief.
+- class: Vin/Yin
+  link_url:
+  image: /assets/images/class-yin.png
+  description: A fusion class combining the flow of Vinyasa with the stillness of Yin yoga.
+- class: Pilates
+  link_url:
+  image: /assets/images/class-pilates.png
+  description: Strengthen your core and improve flexibility with our dynamic Pilates classes.

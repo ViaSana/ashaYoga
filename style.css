@@ -21,6 +21,9 @@
     body {
         @apply overflow-x-hidden max-w-[100vw] font-body text-secondary;
     }
+    section {
+        @apply mx-auto max-w-screen-2xl;
+    }
     h1, h2  {
         @apply font-heading;
     }
@@ -79,6 +82,10 @@
         background-color: #333;
     }
     
+}
+
+@layer utilities {
+
 }
 
 /********************** Momence Overwrite Styles *********************************/

@@ -13,8 +13,10 @@ module.exports = {
         body: ['Raleway', 'sans-serif'],
 
       },    
-
       extend: {
+        colors: {
+          'heading-overlay': '#9E4420', // 20% black overlay on Orange
+        },
         spacing: {
           '5p': '5%',
           '10p': '10%',

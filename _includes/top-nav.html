@@ -1,10 +1,10 @@
-<header class="absolute top-0 left-0 right-0 flex items-center justify-between max-w-screen-xl py-8 mx-auto text-left px-5p">
+<header class="flex items-center py-8 px-5p">
     <h2 class="mb-0 text-2xl">
         <a href="/" class="font-heading">Asha Yoga</a> 
     </h2>
 
     <!-- Normal Menu -->
-    <nav class="items-center justify-between hidden py-4 space-x-8 md:p-0 md:flex">
+    <nav class="items-center justify-end flex-grow hidden space-x-10 md:flex">
         {% for i in site.data.nav %}
             <a href="{{ i.url }}">{{ i.title }}</a>
         {% endfor %}
