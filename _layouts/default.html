@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+
+    {% include top-nav.html %}
+    
+    <section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover"> 
+        <div class="flex items-center min-h-90">
+            <div class="{% if page.hero_offset %} -{{page.hero_offset}} {%endif%}">
+                <hr class="w-[60%] mb-4 border-1 -ml-[5vw]">
+                {% if page.subheading %}
+                    <h4 class="uppercase text-md">{{page.subheading}}</h4>
+                {% endif %}
+                <h1 class="mb-0">{{page.heading}}</h1>
+            </div>
+        </div>
+    </section> 
+
+
+    <div class="border-t">
+        {{content}}
+    </div>
+
+    {% include footer.html %}
+
+    <!-- Javascript -->
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="/main.js"></script>
+
+</body>
+
+</html>
