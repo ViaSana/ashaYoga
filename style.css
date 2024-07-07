@@ -19,7 +19,7 @@
         @apply scroll-smooth;        
     }
     body {
-        @apply overflow-x-hidden max-w-[100vw] font-body;
+        @apply overflow-x-hidden max-w-[100vw] font-body text-secondary;
     }
     h1, h2  {
         @apply font-heading;
