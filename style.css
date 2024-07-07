@@ -40,7 +40,7 @@
         @apply pr-4 tracking-wide uppercase;
     }
     footer a {
-        @apply block text-white;
+        @apply text-white;
     }
 }
 
