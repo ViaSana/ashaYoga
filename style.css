@@ -55,12 +55,12 @@
 
 /* Styles Applying to All Pluggin Contents */
 #momence-embed #momence-plugin-host-schedule * {
-    @apply font-sans rounded-none text-primary border-primary bg-secondary;
+    @apply rounded-none text-primary border-primary bg-secondary;
 } 
 
 /* Styling the headings  */
 #momence-embed #momence-plugin-host-schedule h4 {
-    @apply font-serif;
+    @apply font-heading;
 }
 
 /* Book Now Button */
@@ -80,7 +80,7 @@
 
 /* Add more space below the first row  */
 #momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
-    @apply font-serif text-2xl pointer-events-none;
+    @apply text-2xl pointer-events-none;
 }
 
 /* Hide powered by momence */

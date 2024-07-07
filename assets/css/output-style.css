@@ -30,7 +30,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Poppins, sans-serif; /* 4 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
 }
@@ -375,16 +375,18 @@ html {
   scrollbar-color: color-mix(in oklch, currentColor 60%, transparent) transparent;
 }
 :root {
-  --p: 60.3421% 0.0259 153.125786;
+  --p: 40.6974% 0.187208 313.710064;
+  --b2: 88.2576% 0.029841 316.423493;
+  --b3: 81.6145% 0.027595 316.423493;
   --in: 72.06% 0.191 231.6;
   --su: 64.8% 0.150 160;
   --wa: 84.71% 0.199 83.87;
   --er: 71.76% 0.221 22.18;
-  --bc: 18.9841% 0.000831 271.368413;
-  --pc: 12.0684% 0.00518 153.125786;
-  --sc: 91.2338% 0.010369 322.73887;
-  --ac: 15.0314% 0.029387 83.988117;
-  --nc: 87.4962% 0.005545 178.34825;
+  --bc: 18.9801% 0.006417 316.423493;
+  --pc: 88.1395% 0.037442 313.710064;
+  --sc: 11.7193% 0.030928 40.70108;
+  --ac: 16.0171% 0.031684 84.529476;
+  --nc: 11.7059% 0.014852 335.640897;
   --inc: 0% 0 0;
   --suc: 0% 0 0;
   --wac: 0% 0 0;
@@ -398,45 +400,33 @@ html {
   --border-btn: 1px;
   --tab-border: 1px;
   --tab-radius: 0.5rem;
-  --s: 56.1692% 0.051847 322.73887;
-  --b1: 94.9206% 0.004157 271.368413;
-  --b2: 92.1368% 0.0151 298.55059;
-  --b3: 76.4146% 0.010087 299.183473;
-  --n: 37.4811% 0.027725 178.34825;
-  --a: 75.1572% 0.146934 83.988117;
+  --s: 58.5965% 0.15464 40.70108;
+  --b1: 94.9006% 0.032087 316.423493;
+  --n: 58.5295% 0.07426 335.640897;
+  --a: 80.0856% 0.158419 84.529476;
 }
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
-  font-family: Oranienbaum, serif;
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Raleway, sans-serif;
+}
+h1, h2 {
+  font-family: TanMonCheri, sans-serif;
 }
 h1 {
-  font-size: 6rem;
-  line-height: 1.25;
-}
-h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  line-height: 1.25;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 h3 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
-}
-h4 {
-  font-family: Poppins, sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  line-height: 1.25;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 p {
-  margin-bottom: 0.5em;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 nav a {
   padding-right: 1rem;
@@ -1622,9 +1612,6 @@ footer a {
 .text-right {
   text-align: right;
 }
-.font-serif {
-  font-family: Oranienbaum, serif;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1643,9 +1630,6 @@ footer a {
 .uppercase {
   text-transform: uppercase;
 }
-.italic {
-  font-style: italic;
-}
 .opacity-0 {
   opacity: 0;
 }
@@ -1653,6 +1637,14 @@ footer a {
   background-blend-mode: overlay;
 }
 
+/* Custom Fonts */
+@font-face {
+    font-family: 'TanMonCheri';
+    src:    url('/assets/fonts/TanMonCheri.woff2') format('woff2'),
+            url('/assets/fonts/TanMonCheri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ----------- Default Styles to apply to the whole project  --------- */
 
@@ -1667,14 +1659,13 @@ footer a {
   border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
   --tw-bg-opacity: 1;
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
-  font-family: Poppins, sans-serif;
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
 } 
 
 /* Styling the headings  */
 #momence-embed #momence-plugin-host-schedule h4 {
-  font-family: Oranienbaum, serif;
+  font-family: TanMonCheri, sans-serif;
 }
 
 /* Book Now Button */
@@ -1707,7 +1698,6 @@ footer a {
 /* Add more space below the first row  */
 #momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
   pointer-events: none;
-  font-family: Oranienbaum, serif;
   font-size: 1.5rem;
   line-height: 2rem;
 }
