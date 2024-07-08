@@ -59,31 +59,6 @@
     .mobile-menu {
         @apply absolute top-0 left-0 hidden w-screen h-screen text-center bg-base-100;
     }
-
-    @media (max-width: 767px) {
-        .burger-menu {
-            display: none;
-        }
-    }
-
-    .burger-button.active + #burger-menu {
-        display: block;
-    }
-
-    .burger-button .burger-line {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 24px;
-        width: 24px;
-        cursor: pointer;
-    }
-
-    .burger-button .burger-line div {
-        width: 24px;
-        height: 3px;
-        background-color: #333;
-    }
     
 }
 
@@ -105,7 +80,7 @@
 
 /* Book Now Button */
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
-    @apply inline-block px-6 py-2 tracking-wide uppercase rounded-none bg-primary text-secondary whitespace-nowrap;
+    @apply uppercase bg-primary text-base-100;
 }
 
 /* Remove the border from the navigation arrows left and right at the top  */

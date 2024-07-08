@@ -1,6 +1,6 @@
 <header class="flex items-center py-3 px-5p">
     
-    <a href="/"><img src="/assets/images/asha_logo-horizontal.png" class="max-w-xs"/></a> 
+    <a href="/"><img src="/assets/images/asha_logo-horizontal.png" class="sm:max-w-xs max-w-[15rem]"/></a> 
 
     <!-- Normal Menu -->
     <nav class="items-center justify-end flex-grow hidden mb-1 space-x-10 md:flex">
@@ -12,11 +12,11 @@
 
     <!-- Mobile Menu -- works w/ main.js + .hamburger-button, .mobile-menu + DaisyUI -->
     <div class="flex w-full py-2 md:hidden">
-        <div class="flex items-center justify-end pr-2 ml-auto">
+        <div class="flex items-center justify-end ml-auto">
             
             <div class="relative z-50 space-y-2">
                 <!-- Hamburger -->
-                <label class="shadow-none btn btn-circle swap swap-rotate">
+                <label class="border-none shadow-none btn btn-circle swap swap-rotate bg-base-100">
                     <!-- this hidden checkbox controls the state --><input type="checkbox" />
                 
                     <!-- hamburger icon -->
@@ -31,7 +31,7 @@
             <nav class="text-center mt-28">
                 {% for i in site.data.nav %}
                 <div class="block my-6">
-                    <a class="btn w-[40%]" href="{{ i.url }}">{{ i.title }}</a>
+                    <a class="btn btn-primary" href="{{ i.url }}">{{ i.title }}</a>
                 </div>
                 {% endfor %}
             </nav> 
