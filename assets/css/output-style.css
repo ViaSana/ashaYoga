@@ -1482,9 +1482,6 @@ footer a {
 .h-auto {
   height: auto;
 }
-.h-full {
-  height: 100%;
-}
 .min-h-50 {
   min-height: 50vh;
 }
@@ -1499,12 +1496,6 @@ footer a {
 }
 .w-full {
   width: 100%;
-}
-.w-1\/3 {
-  width: 33.333333%;
-}
-.w-\[33vw\] {
-  width: 33vw;
 }
 .min-w-fit {
   min-width: -moz-fit-content;
@@ -1545,15 +1536,6 @@ footer a {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
@@ -1565,9 +1547,6 @@ footer a {
 }
 .flex-nowrap {
   flex-wrap: nowrap;
-}
-.place-items-center {
-  place-items: center;
 }
 .items-start {
   align-items: flex-start;
@@ -1581,11 +1560,11 @@ footer a {
 .justify-between {
   justify-content: space-between;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
 .gap-4 {
   gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1766,6 +1745,17 @@ footer a {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1783,9 +1773,6 @@ footer a {
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.pb-0 {
-  padding-bottom: 0px;
 }
 .text-left {
   text-align: left;
@@ -2008,12 +1995,6 @@ footer a {
   .md\:w-auto {
     width: auto;
   }
-  .md\:grid-flow-row {
-    grid-auto-flow: row;
-  }
-  .md\:grid-flow-col {
-    grid-auto-flow: column;
-  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2043,14 +2024,17 @@ footer a {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
   .md\:pb-\[75\%\] {
     padding-bottom: 75%;
   }
   .md\:pt-12 {
     padding-top: 3rem;
   }
-  .md\:pb-4 {
-    padding-bottom: 1rem;
+  .md\:pl-28 {
+    padding-left: 7rem;
   }
   .md\:text-5xl {
     font-size: 3rem;
