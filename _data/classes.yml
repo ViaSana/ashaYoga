@@ -6,10 +6,6 @@
   link_url:
   image: /assets/images/class-hatha.png
   description: A balanced practice that emphasizes alignment and mindfulness, suitable for everyone.
-- class: Resorative 
-  link_url:
-  image: /assets/images/class-restore.png
-  description: A gentle, calming class that promotes deep relaxation and stress relief.
 - class: Vin/Yin
   link_url:
   image: /assets/images/class-yin.png
@@ -18,3 +14,7 @@
   link_url:
   image: /assets/images/class-pilates.png
   description: Strengthen your core and improve flexibility with our dynamic Pilates classes.
+- class: Resorative 
+  link_url:
+  image: /assets/images/class-restore.png
+  description: A gentle, calming class that promotes deep relaxation and stress relief.
