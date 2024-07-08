@@ -1,10 +1,10 @@
 <!-- include top-hero -->
-<section class="px-5p max-w-screen-xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover"> 
+<section class="px-5p max-w-screen-2xl mx-auto bg-[url('{{page.hero}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover"> 
   <div class="flex items-center min-h-90">
       <div class="{% if page.hero_offset %} -{{page.hero_offset}} {%endif%}">
-          <hr class="w-[60%] border-1 -ml-[5vw] border-accent -translate-y-20">
+          <hr class="w-[60%] border -ml-[5vw] border-accent -translate-y-20">
           {% if page.subheading %}
-              <h4 class="uppercase text-md">{{page.subheading}}</h4>
+              <h4 class="uppercase -translate-y-14 text-md">{{page.subheading}}</h4>
           {% endif %}
           <h1 class="mb-0 text-8xl text-heading-overlay">{{page.heading}}</h1>
       </div>
