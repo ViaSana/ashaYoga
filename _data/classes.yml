@@ -1,20 +1,20 @@
 - class: Ashtanga
-  link_url:
+  link_url: /schedule
   image: /assets/images/class-ashtanga.png
   description: A traditional practice focused on individualized instruction, perfect for all levels.
 - class: Hatha
-  link_url:
+  link_url: /schedule
   image: /assets/images/class-hatha.png
   description: A balanced practice that emphasizes alignment and mindfulness, suitable for everyone.
 - class: Vin/Yin
-  link_url:
+  link_url: /schedule
   image: /assets/images/class-yin.png
   description: A fusion class combining the flow of Vinyasa with the stillness of Yin yoga.
 - class: Pilates
-  link_url:
+  link_url: /schedule
   image: /assets/images/class-pilates.png
   description: Strengthen your core and improve flexibility with our dynamic Pilates classes.
 - class: Resorative 
-  link_url:
+  link_url: /schedule
   image: /assets/images/class-restore.png
   description: A gentle, calming class that promotes deep relaxation and stress relief.

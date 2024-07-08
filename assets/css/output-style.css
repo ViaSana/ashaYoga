@@ -1568,6 +1568,9 @@ footer a {
 .mb-auto {
   margin-bottom: auto;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -1629,6 +1632,12 @@ footer a {
 .max-w-screen-2xl {
   max-width: 1536px;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
+.max-w-xs {
+  max-width: 20rem;
+}
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1685,6 +1694,9 @@ footer a {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
 }
 .gap-6 {
   gap: 1.5rem;
@@ -1900,6 +1912,14 @@ footer a {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
