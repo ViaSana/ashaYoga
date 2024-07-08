@@ -95,7 +95,7 @@
 
 /* Styles Applying to All Pluggin Contents */
 #momence-embed #momence-plugin-host-schedule * {
-    @apply rounded-none text-primary border-primary bg-secondary;
+    @apply rounded-none text-primary border-primary bg-base-100;
 } 
 
 /* Styling the headings  */
@@ -133,10 +133,12 @@
     @apply bg-primary;
 }
 
+
 /* Class item featured image, type title, teacher name and bio */
 #momence-embed #momence-plugin-host-schedule .jDJBAl,
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image,
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type,
-#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher,
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-image_container {
     display: none;
 }
