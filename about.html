@@ -1,60 +1,71 @@
 ---
 layout: default
+hero: /assets/images/about_hero.png
+hero_position: bg-top bg-[position:50%_16%]
+hero_offset: ml-[30vw]
+heading: About
 ---
 <!-- About Section -->
 <section class="max-w-screen-xl p-5 mx-auto my-12">
-    <h2 class="mb-6 text-4xl font-bold text-center">About</h2>
     <div class="flex flex-col items-center mb-12">
-        <img src="path/to/your/image.jpg" alt="About Image" class="w-full h-auto mb-6 border border-accent">
-        <div class="text-center">
-            <h3 class="mb-4 text-3xl uppercase">Our Studio</h3>
+        <div class="max-w-4xl">
+            <h1 class="mb-4">Our Studio</h1>
             <p class="mb-4 text-lg">Inclusive Yoga For Mind, Body, And Spirit</p>
-            <p class="mb-4 text-md">At Asha Yoga, we believe that yoga is for everyone. Our mission is to create an inclusive and welcoming environment where individuals from all walks of life can practice and grow. Through yoga, we foster inner peace, strength, and inspiration. Our diverse classes are designed to help you discover and embrace your full potential.</p>
-            <p class="text-md">Community is at the heart of Asha Yoga. We strive to build a nurturing environment where everyone feels valued and connected. Join us and be a part of our inclusive, vibrant community.</p>
+            <p class="mb-4">
+                At Asha Yoga, we believe that yoga is for everyone. Our mission is to create an inclusive and welcoming environment where individuals from all walks of life can practice and grow. We provide a space for physical, mental, and spiritual well-being to flourish in harmony. We focus on the transformative power of yoga to foster inner peace, strength, and resilience. Our diverse classes cater to all levels, from seasoned yogis to beginners. Our experienced instructors offer personalized guidance and support to help you deepen your practice.
+            </p>
+            <p class="mb-4">
+                Community is at the heart of Asha Yoga. We strive to build a nurturing environment where everyone feels valued and connected. Our studio is not just a place to practice yoga but a sanctuary for solace, encouragement, and inspiration. Inclusivity is a core value at Asha Yoga. We celebrate diversity and ensure our studio is a safe space for all, regardless of age, ability, background, or identity. We are passionate about making yoga accessible to everyone.
+            </p>
+            <p class="mb-4">
+                Join us at Asha Yoga to experience the holistic benefits of yoga in a community that embraces you just as you are. Together, we cultivate a deeper sense of well-being and unity, both on and off the mat.
+            </p>
+            <p class="mb-4">
+                <strong>Come Visit Us:</strong><br>
+                525 Vernon Rigdon Road<br>
+                Munfordville, KY 42765
+            </p>
+            <a class="btn btn-primary">Sign Up</a>
         </div>
     </div>
 </section>
 
 <!-- Founder Section -->
-<section class="max-w-screen-xl p-5 mx-auto my-12 bg-white border rounded-lg border-accent">
-    <div class="flex flex-col items-center md:flex-row">
-        <img src="path/to/founder/image.jpg" alt="Founder Image" class="w-full h-auto mb-4 border md:w-1/3 border-accent md:mb-0 md:mr-6">
-        <div class="text-left md:w-2/3">
-            <h3 class="mb-2 text-3xl font-bold uppercase">Meet Hope</h3>
-            <p class="mb-2 text-lg"><strong>Studio Founder And Owner</strong></p>
-            <p class="mb-4 text-md">Hope Haskins, RYT-500, E-RYT200, YACEP, IAYT, MA holder, lives on her family farm with her husband, two toddlers, and many animals. Her journey with yoga began as a way to reduce anxiety and find balance in life. Today, Hope shares her knowledge and passion through her classes, helping others find strength, stability, and inner peace.</p>
-            <p class="mb-4 text-md">Hope focuses on community building within rural areas and bringing yoga to all levels of experience. Her dedication to making yoga accessible to everyone drives her passion for teaching and supporting her students.</p>
-            <a class="btn btn-primary" href="link_to_signup">Sign Up</a>
+<section class="bg-neutral text-base-100">
+    <div class="grid items-center md:grid-cols-2">
+        <img src="/assets/images/Hope_Headshot.png" alt="Founder Image" class="h-full">
+        <div class="text-left p-5p">
+            <h2 class="mb-2 text-5xl">Meet Hope</h2>
+            <p class="mb-2 text-2xl">Studio Founder And Owner</p>
+            <p class="mb-2">Hope Hawkins, RYT500, E-RYT200, YACEP, and MA holder, lives on her family farm with her husband, two toddlers, and many animals. Her journey into yoga began as a way to soothe anxiety and find direction in life. Through yoga, she discovered her true passion: helping others (and herself) grow in strength, stability, and clarity.</p>
+            <p class="mb-2">With over a decade of experience, Hope brings a deep passion for holistic wellness and a commitment to making yoga accessible to everyone. Her teaching style emphasizes inclusivity and personal growth, ensuring all students feel welcome and supported.</p>
+            <p class="mb-2">Hope focuses on community building within rural areas and bringing yoga to diverse populations. Introduced to Ashtanga in 2021, she practices this form personally and is excited to show that Ashtanga is an accessible and sustainable yoga practice.</p>
         </div>
     </div>
 </section>
 
 <!-- Teachers Section -->
 <section class="max-w-screen-xl p-5 mx-auto my-12">
-    <h3 class="mb-6 text-3xl font-bold text-center uppercase">Our Teachers</h3>
+    <h2 class="mb-6 text-3xl text-primary">Our Teachers</h2>
     <div class="grid gap-6 md:grid-cols-3">
+
         <!-- Repeat for each teacher -->
-        <div class="flex flex-col items-center p-6 border rounded-lg">
-            <img src="path/to/teacher1.jpg" alt="Teacher Image" class="w-full h-auto mb-4 border border-accent">
-            <h4 class="mb-2 text-2xl uppercase">Elena Georgiades</h4>
-            <p class="text-md">Elena began teaching PCP Pilates during the pandemic, enhancing her enthusiasm for group fitness and movement. As a classically trained musician, she discovered a passion for teaching during the lockdown. Elena's classes focus on mobility and core strength, providing a safe and supportive environment for all levels.</p>
+        {% for p in site.data.teachers %}
+        <div class="flex flex-col items-center p-6">
+            <img src="{{p.image}}" alt="Teacher Image" class="mb-4">
+            <div class="relative w-full text-center">
+                <h4 class="uppercase">{{p.name}}</h4>
+                <h5>{{p.certification}}</h5>
+                <a href="{{p.instagram}}" class="absolute right-0 top-2">
+                    <img src="/assets/images/instagram_logo.png" alt="Instagram Logo" class="w-6 h-6">
+                </a>
+            </div>
+            <hr class="w-full my-2 border-b border-accent">
+            <p class="text-center">{{p.bio}}</p>
         </div>
-        <div class="flex flex-col items-center p-6 border rounded-lg">
-            <img src="path/to/teacher2.jpg" alt="Teacher Image" class="w-full h-auto mb-4 border border-accent">
-            <h4 class="mb-2 text-2xl uppercase">Sarah Davis</h4>
-            <p class="text-md">Sarah has been practicing yoga for seven years and began teaching to deepen her own practice. She focuses on creating a supportive and inclusive environment for all her students. Sarah's classes emphasize body alignment and breath control.</p>
-        </div>
-        <div class="flex flex-col items-center p-6 border rounded-lg">
-            <img src="path/to/teacher3.jpg" alt="Teacher Image" class="w-full h-auto mb-4 border border-accent">
-            <h4 class="mb-2 text-2xl uppercase">Stephany Vaughn-Mack</h4>
-            <p class="text-md">Stephany is dedicated to bringing fun and energy to her classes. With a background in dance and fitness, her yoga sessions combine dynamic movement and mindfulness. Stephany's classes are accessible to all levels and aim to provide a holistic yoga experience.</p>
-        </div>
-        <!-- Repeat end -->
+        {% endfor %}
     </div>
 </section>
 
 <!-- Partnership Section -->
-<section class="max-w-screen-xl p-5 mx-auto my-12 text-center bg-yellow-300">
-    <h3 class="mb-4 text-2xl font-bold">Asha Yoga is Proud Partner of the Trini Foundation</h3>
-    <p class="mb-4 text-md">Helping Support Recovery Through Yoga. Learn More At <a href="https://triniyoga.org" class="text-orange-500 hover:underline">TriniFoundation.org</a>.</p>
-</section>
+{% include trini.html %}
