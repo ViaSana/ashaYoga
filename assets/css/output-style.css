@@ -1482,6 +1482,12 @@ footer a {
 .h-auto {
   height: auto;
 }
+.max-h-56 {
+  max-height: 14rem;
+}
+.max-h-52 {
+  max-height: 13rem;
+}
 .min-h-50 {
   min-height: 50vh;
 }
@@ -1515,6 +1521,15 @@ footer a {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-xl {
+  max-width: 36rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -1556,6 +1571,9 @@ footer a {
 }
 .justify-end {
   justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -1647,6 +1665,10 @@ footer a {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+}
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
 }
@@ -1673,6 +1695,9 @@ footer a {
 }
 .bg-\[url\(\'\{\{page\.hero\}\}\'\)\] {
   background-image: url('{{page.hero}}');
+}
+.bg-\[url\(\'\/assets\/images\/creative-ex\.png\'\)\] {
+  background-image: url('/assets/images/creative-ex.png');
 }
 .bg-cover {
   background-size: cover;
@@ -1721,6 +1746,10 @@ footer a {
   padding-left: 5%;
   padding-right: 5%;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1745,13 +1774,9 @@ footer a {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1836,6 +1861,9 @@ footer a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .opacity-60 {
   opacity: 0.6;
@@ -1938,6 +1966,14 @@ footer a {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
 }
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+}
+.hover\:text-neutral:hover {
+  --tw-text-opacity: 1;
+  color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity)));
+}
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2030,11 +2066,11 @@ footer a {
   .md\:pb-\[75\%\] {
     padding-bottom: 75%;
   }
-  .md\:pt-12 {
-    padding-top: 3rem;
-  }
   .md\:pl-28 {
     padding-left: 7rem;
+  }
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
   .md\:text-5xl {
     font-size: 3rem;
