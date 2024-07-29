@@ -1482,9 +1482,6 @@ footer a {
 .h-auto {
   height: auto;
 }
-.max-h-56 {
-  max-height: 14rem;
-}
 .max-h-52 {
   max-height: 13rem;
 }
@@ -1521,15 +1518,6 @@ footer a {
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-lg {
-  max-width: 32rem;
-}
-.max-w-xl {
-  max-width: 36rem;
-}
-.max-w-2xl {
-  max-width: 42rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -1594,6 +1582,11 @@ footer a {
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1603,11 +1596,6 @@ footer a {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 .self-end {
   align-self: flex-end;
@@ -1646,6 +1634,10 @@ footer a {
   --tw-border-opacity: 1;
   border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity)));
 }
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+}
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -1665,15 +1657,14 @@ footer a {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
-.bg-accent {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
-}
 .bg-\[url\(\'\'\)\] {
   background-image: url('');
 }
 .bg-\[url\(\'\/assets\/images\/classes_hero\.png\'\)\] {
   background-image: url('/assets/images/classes_hero.png');
+}
+.bg-\[url\(\'\/assets\/images\/creative-ex\.png\'\)\] {
+  background-image: url('/assets/images/creative-ex.png');
 }
 .bg-\[url\(\'\/assets\/images\/home_hero-gradient\.png\'\)\] {
   background-image: url('/assets/images/home_hero-gradient.png');
@@ -1696,8 +1687,8 @@ footer a {
 .bg-\[url\(\'\{\{page\.hero\}\}\'\)\] {
   background-image: url('{{page.hero}}');
 }
-.bg-\[url\(\'\/assets\/images\/creative-ex\.png\'\)\] {
-  background-image: url('/assets/images/creative-ex.png');
+.bg-\[url\(\'\/assets\/images\/about_hero\.png\'\)\] {
+  background-image: url('/assets/images/about_hero.png');
 }
 .bg-cover {
   background-size: cover;
@@ -1769,14 +1760,6 @@ footer a {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1938,7 +1921,7 @@ footer a {
 
 /* Hide powered by momence */
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
-    display: none;
+  display: none;
 }
 
 /* Styling the lines under the list of pages */
@@ -1954,7 +1937,7 @@ footer a {
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type,
 #momence-embed #momence-plugin-host-schedule .momence-session-teacher,
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-image_container {
-    display: none;
+  display: none;
 }
 .placeholder\:uppercase::-moz-placeholder {
   text-transform: uppercase;
@@ -1965,14 +1948,6 @@ footer a {
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity)));
-}
-.hover\:text-primary:hover {
-  --tw-text-opacity: 1;
-  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
-}
-.hover\:text-neutral:hover {
-  --tw-text-opacity: 1;
-  color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity)));
 }
 .hover\:underline:hover {
   text-decoration-line: underline;

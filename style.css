@@ -100,7 +100,7 @@
 
 /* Hide powered by momence */
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
-    display: none;
+    @apply hidden;
 }
 
 /* Styling the lines under the list of pages */
@@ -115,5 +115,5 @@
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type,
 #momence-embed #momence-plugin-host-schedule .momence-session-teacher,
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-image_container {
-    display: none;
+    @apply hidden;
 }
