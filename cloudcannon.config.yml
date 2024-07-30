@@ -17,7 +17,6 @@ collections_config:
       include:
       exclude:
         - nav.yml
-        -
     description: ''
     icon: notes
     _editables:
@@ -37,6 +36,9 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 _inputs:
+  bio:
+    type: textarea
+    cascade: true
   categories:
     type: multiselect
     options:
