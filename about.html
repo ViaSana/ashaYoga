@@ -21,11 +21,13 @@ heading: About
                 Join us at Asha Yoga to experience the holistic benefits of yoga in a community that embraces you just as you are. Together, we cultivate a deeper sense of well-being and unity, both on and off the mat.
             </p>
             <p class="mb-4 editable">
-                <strong>Come Visit Us:</strong><br>
-                525 Vernon Rigdon Road<br>
+                <strong>Come Visit Us:</strong><br />
+                525 Vernon Rigdon Road<br />
                 Munfordville, KY 42765
             </p>
-            <a class="btn btn-primary editable">Sign Up</a>
+            <a class="btn btn-primary editable" href="/schedule.html">
+                Sign Up
+            </a>
         </div>
     </div>
 </section>
@@ -33,7 +35,7 @@ heading: About
 <!-- Founder Section -->
 <section class="bg-neutral text-base-100">
     <div class="grid items-center md:grid-cols-2">
-        <img src="/assets/images/Hope_Headshot.png" alt="Founder Image" class="h-full editable">
+        <img src="/assets/images/Hope_Headshot.png" alt="Founder Image" class="h-full editable" />
         <div class="text-left p-5p">
             <h2 class="mb-2 text-5xl editable">Meet Hope</h2>
             <p class="mb-2 text-2xl editable">Studio Founder And Owner</p>
@@ -52,15 +54,15 @@ heading: About
         <!-- Repeat for each teacher -->
         {% for p in site.data.teachers %}
         <div class="flex flex-col items-center p-6">
-            <img src="{{p.image}}" alt="Teacher Image" class="mb-4">
+            <img src="{{p.image}}" alt="Teacher Image" class="mb-4" />
             <div class="relative w-full text-center">
                 <h4 class="uppercase">{{p.name}}</h4>
                 <h5>{{p.certification}}</h5>
                 <a href="{{p.instagram}}" class="absolute right-0 top-2">
-                    <img src="/assets/images/instagram_logo.png" alt="Instagram Logo" class="w-6 h-6">
+                    <img src="/assets/images/instagram_logo.png" alt="Instagram Logo" class="w-6 h-6" />
                 </a>
             </div>
-            <hr class="w-full my-2 border-b border-accent">
+            <hr class="w-full my-2 border-b border-accent" />
             <p class="text-center">{{p.bio}}</p>
         </div>
         {% endfor %}
