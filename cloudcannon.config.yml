@@ -36,6 +36,12 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 _inputs:
+  layout:
+    hidden: true
+    cascade: true
+  hero_position:
+    hidden: true
+    cascade: true
   summary_description:
     label: Summary
     comment: This description will show up on the home page. 
