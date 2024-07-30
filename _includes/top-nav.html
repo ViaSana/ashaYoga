@@ -1,9 +1,9 @@
-<header class="flex items-center py-3 px-5p">
+<header class="flex items-center py-3 pl-5p">
     
-    <a href="/"><img src="/assets/images/asha_logo-horizontal.png" class="sm:max-w-xs max-w-[15rem]"/></a> 
+    <a href="/"><img src="/assets/images/asha_logo-horizontal.png" class="sm:max-w-xs max-w-[15rem] editable"/></a> 
 
     <!-- Normal Menu -->
-    <nav class="items-center justify-end flex-grow hidden mb-1 space-x-10 md:flex">
+    <nav class="items-center justify-end flex-grow hidden mb-1 space-x-5 lg:space-x-10 md:flex">
         {% for i in site.data.nav %}
             <a href="{{ i.url }}">{{ i.title }}</a>
         {% endfor %}

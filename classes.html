@@ -44,8 +44,8 @@ heading: Our Classes
 </section>
 
 <section class="max-w-screen-xl p-5 mx-auto my-8 bg-light">
-    <h2 class="mb-6 text-4xl font-bold text-center text-primary">Upcoming Events</h2>
-    <p class="max-w-4xl mx-auto mb-12 text-xl text-center text-primary">
+    <h2 class="mb-6 text-4xl font-bold text-center text-primary editable">Upcoming Events</h2>
+    <p class="max-w-4xl mx-auto mb-12 text-xl text-center text-primary editable">
         Join Us For Special Workshops And Sessions Aimed At Enhancing Your Yoga Journey. Don't Forget To Bring Your Mat And A Water Bottle!
     </p>
     <div class="space-y-12">
@@ -58,7 +58,7 @@ heading: Our Classes
                 <p class="mb-4 text-md">
                     {{ event.description }}
                 </p>
-                <a class="btn btn-primary" href="{{ event.url }}">Sign Up</a>
+                <a class="btn btn-primary editable" href="{{ event.url }}">Sign Up</a>
             </div>
         </div>
         {% endfor %}
