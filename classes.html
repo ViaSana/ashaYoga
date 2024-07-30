@@ -1,7 +1,7 @@
 ---
 layout: default 
 hero: /assets/images/classes_hero.png
-hero_position: bg-top bg-[position:50%_16%]
+hero_position: bg-top
 hero_offset: ml-[30vw]
 heading: Our Classes
 ---
@@ -9,7 +9,7 @@ heading: Our Classes
 <section class="max-w-screen-xl mx-auto p-5p">
     <div class="grid gap-4 pb-0 md:pb-4 md:grid-cols-6">
     {% for item in site.data.classes limit:3 %}
-        <div class="flex flex-col col-span-2 pb-4 text-center border border-accent">
+        <div class="flex flex-col col-span-2 pb-6 text-center border border-accent">
             <img src="{{item.image}}" alt="Class Image" class="aspect-[6/5] mx-auto mt-2 border border-accent scroll-in-from-bottom" />
             <div class="py-6 grow">
                 <h2 class="pb-6 text-3xl uppercase">{{item.class}}</h2>
@@ -26,7 +26,7 @@ heading: Our Classes
     <div class="grid gap-4 md:grid-cols-6">
         <div></div>
     {% for item in site.data.classes offset:3 %}
-        <div class="flex flex-col col-span-2 pb-4 text-center border border-accent">
+        <div class="flex flex-col col-span-2 pb-6 text-center border border-accent">
             <img src="{{item.image}}" alt="Class Image" class="aspect-[6/5] mt-2 mx-auto border border-accent scroll-in-from-bottom" />
             <div class="py-6 grow">
                 <h2 class="pb-6 text-3xl uppercase">{{item.class}}</h2>
@@ -43,15 +43,15 @@ heading: Our Classes
     </div>
 </section>
 
-<section class="max-w-screen-xl p-5 mx-auto my-12 bg-light">
+<section class="max-w-screen-xl p-5 mx-auto my-8 bg-light">
     <h2 class="mb-6 text-4xl font-bold text-center text-primary">Upcoming Events</h2>
     <p class="max-w-4xl mx-auto mb-12 text-xl text-center text-primary">
         Join Us For Special Workshops And Sessions Aimed At Enhancing Your Yoga Journey. Don't Forget To Bring Your Mat And A Water Bottle!
     </p>
     <div class="space-y-12">
         {% for event in site.data.events %}
-        <div class="flex flex-col items-center p-6 border md:flex-row border-accent">
-            <img src="{{ event.image }}" alt="Event Image" class="aspect-[10/9] mx-12 border md:w-1/4 border-accent" />
+        <div class="flex flex-col items-center px-6 py-4 border md:flex-row border-accent">
+            <img src="{{ event.image }}" alt="Event Image" class="aspect-[10/9] mx-12 border md:w-1/4 mb-4 border-accent" />
             <div class="text-left md:w-2/3">
                 <h2 class="mb-2 text-3xl uppercase">{{ event.heading }}</h2>
                 <p class="mb-2 text-lg"><strong>Date:</strong> {{ event.date }} | <strong>Cost:</strong> {{ event.cost }}</p>

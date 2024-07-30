@@ -1,0 +1,56 @@
+---
+layout: default
+hero: /assets/images/creative-ex.png
+hero_position: bg-[position:0_70%]
+hero_offset: ml-[30vw]
+heading: Creative <br>Expressions
+---
+
+<section class="max-w-screen-xl p-5 mx-auto my-12">
+  <div class="flex flex-col items-center mb-12">
+      <div class="max-w-4xl">
+          <h1 class="mb-4">Discover Local Talent</h1>
+          <p class="mb-4 text-lg">Unique Art and Creations</p>
+          <p class="mb-4">
+            Located inside Asha Yoga Studio, Creative Expressions Art Shop showcases the vibrant works of local artists, offering a diverse selection of unique art and creations. From paintings and sculptures to handcrafted jewelry and home decor, our shop celebrates the creativity and talent within our community. Whether you're an art collector or simply looking for a special piece to brighten your space, you'll find inspiration in our curated collection. Visit us to explore the beauty and craftsmanship of local artistry and support our creative community.          </p>
+          
+          <p class="mb-4">
+              <strong>Operating Hours: </strong><br>
+              Monday-Friday: 10am-6pm<br>
+              Saturday: 10am-4pm
+          </p>
+          <p class="mb-4">
+              <strong>Come Visit Us:</strong><br>
+              525 Vernon Rigdon Road<br>
+              Munfordville, KY 42765
+          </p>
+          <a class="btn btn-primary">Sign Up</a>
+      </div>
+  </div>
+</section>
+
+<section class="max-w-screen-xl p-5 mx-auto my-2 bg-light">
+  <h2 class="mb-12 text-4xl font-bold text-center text-primary">Featured Artisits</h2>
+
+
+  <div class="">
+    {% for i in site.data.artists %}
+      {% capture mod_result %}{{ forloop.index0 | modulo: 2 }}{% endcapture %}
+      <div class="flex flex-col items-center px-6 py-4 border md:flex-row border-accent {% if mod_result == '1' %}md:flex-row-reverse{% endif %}">
+        <img src="{{ i.image }}" alt="Event Image" class="aspect-[10/9] mx-12 border md:w-1/4 mb-4 border-accent" />
+        <div class="text-left md:w-3/5">
+          <div class="flex items-center">
+            <h2 class="mb-2 text-3xl uppercase">{{ i.name }}</h2>
+            <a href="{{ i.instagram }}" class="px-4 pb-2">
+              <img src="/assets/images/instagram_logo.png" alt="Instagram Logo" class="w-8 h-8">
+            </a>
+          </div>
+          <p class="mb-4">
+            {{ i.bio }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</section>
