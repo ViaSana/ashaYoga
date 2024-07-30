@@ -36,6 +36,10 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 _inputs:
+  class_description:
+    hint: This description will show up on the class page. The one above is for the home page.
+    cascade: true
+
   bio:
     type: textarea
     cascade: true
