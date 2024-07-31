@@ -1,7 +1,7 @@
 {
     "name": "asha-yoga",
     "version": "1.0.0",
-    "description": "Yoga Studio ViaSana Website",
+    "description": "Yoga Shala ViaSana Website",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
