@@ -1,12 +1,12 @@
-- image: /assets/images/event-1.png
-  heading: "Yoga for Stress Relief"
-  date: "July 15-16, 2024"
-  cost: "$45"
-  description: "Join us for a weekend workshop focused on techniques to manage and reduce stress through yoga and meditation. This workshop is perfect for anyone looking to find peace and relaxation in their daily lives. Learn breathing exercises, gentle yoga poses, and mindfulness practices to help you unwind and rejuvenate."
-  signup_url:
-- image: /assets/images/event-2.png
-  heading: "Sunrise Yoga at the Park"
-  date: "August 10, 2024"
+- image: /assets/images/asha_logo-stacked.png
+  heading: "Asha Yoga Grand Opening"
+  date: "August 8th"
   cost: "FREE"
-  description: "Start your day with a refreshing and invigorating sunrise yoga session in the beautiful Mumford Park. This outdoor class is designed to energize your body and calm your mind as you connect with nature. Suitable for all levels, this session includes a blend of gentle stretches and dynamic flows, ending with a peaceful meditation."
+  description: "Join us for a day to celebrate the opening of the Shala"
+  signup_url:
+- image: /assets/images/trini_logo-purp.png
+  heading: "Triri Foundation Fundraiser"
+  date: ""
+  cost: "FREE"
+  description: "Help us raise money for this wonderful organization"
   signup_url:
