@@ -1782,6 +1782,24 @@ footer a {
 .bg-\[url\(\{\{page\.div_image\}\}\)\] {
   background-image: url({{page.div_image}});
 }
+.bg-\[url\(\{\{page\.creative-expressions_image\}\}\)\] {
+  background-image: url({{page.creative-expressions_image}});
+}
+.bg-\[url\(\{\{page\.yoga-square1_image\}\}\)\] {
+  background-image: url({{page.yoga-square1_image}});
+}
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+.bg-\[url\(\/assets\/images\/yogaSq-1\.png\)\] {
+  background-image: url(/assets/images/yogaSq-1.png);
+}
+.bg-\[url\(\{\{page\.yoga-square2_image\}\}\)\] {
+  background-image: url({{page.yoga-square2_image}});
+}
+.bg-\[url\(\/assets\/images\/yogaSq-2\.png\)\] {
+  background-image: url(/assets/images/yogaSq-2.png);
+}
 .bg-cover {
   background-size: cover;
 }
