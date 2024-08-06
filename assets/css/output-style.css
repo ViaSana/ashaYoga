@@ -1615,10 +1615,6 @@ footer a {
   min-width: -moz-fit-content;
   min-width: fit-content;
 }
-.min-w-min {
-  min-width: -moz-min-content;
-  min-width: min-content;
-}
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -1633,9 +1629,6 @@ footer a {
 }
 .max-w-sm {
   max-width: 24rem;
-}
-.shrink-0 {
-  flex-shrink: 0;
 }
 .flex-grow {
   flex-grow: 1;
@@ -1657,9 +1650,6 @@ footer a {
 .grid-rows-3 {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
-.flex-row {
-  flex-direction: row;
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1668,9 +1658,6 @@ footer a {
 }
 .items-center {
   align-items: center;
-}
-.justify-start {
-  justify-content: flex-start;
 }
 .justify-end {
   justify-content: flex-end;
@@ -1714,9 +1701,6 @@ footer a {
 }
 .self-end {
   align-self: flex-end;
-}
-.self-center {
-  align-self: center;
 }
 .border {
   border-width: 1px;
@@ -1791,6 +1775,12 @@ footer a {
 }
 .bg-\[url\(\'\{\{page\.hero_image\}\}\'\)\] {
   background-image: url('{{page.hero_image}}');
+}
+.bg-\[url\(\/assets\/images\/creative-ex\.png\)\] {
+  background-image: url(/assets/images/creative-ex.png);
+}
+.bg-\[url\(\{\{page\.div_image\}\}\)\] {
+  background-image: url({{page.div_image}});
 }
 .bg-cover {
   background-size: cover;
@@ -2131,10 +2121,6 @@ footer a {
   }
   .md\:w-3\/5 {
     width: 60%;
-  }
-  .md\:min-w-fit {
-    min-width: -moz-fit-content;
-    min-width: fit-content;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
