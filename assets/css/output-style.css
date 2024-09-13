@@ -1578,6 +1578,12 @@ footer a {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-\[9\/6\] {
+  aspect-ratio: 9/6;
+}
+.aspect-\[6\/9\] {
+  aspect-ratio: 6/9;
+}
 .h-6 {
   height: 1.5rem;
 }
@@ -1589,6 +1595,12 @@ footer a {
 }
 .h-full {
   height: 100%;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .min-h-50 {
   min-height: 50vh;
@@ -1610,6 +1622,12 @@ footer a {
 }
 .w-full {
   width: 100%;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-10 {
+  width: 2.5rem;
 }
 .min-w-fit {
   min-width: -moz-fit-content;
@@ -1767,20 +1785,17 @@ footer a {
 .bg-\[url\(\'\/assets\/images\/schedule_hero\.png\'\)\] {
   background-image: url('/assets/images/schedule_hero.png');
 }
-.bg-\[url\(\'\/assets\/images\/yogaSq-1\.png\'\)\] {
-  background-image: url('/assets/images/yogaSq-1.png');
-}
-.bg-\[url\(\'\/assets\/images\/yogaSq-2\.png\'\)\] {
-  background-image: url('/assets/images/yogaSq-2.png');
-}
 .bg-\[url\(\'\{\{page\.hero_image\}\}\'\)\] {
   background-image: url('{{page.hero_image}}');
 }
 .bg-\[url\(\/assets\/images\/creative-ex\.png\)\] {
   background-image: url(/assets/images/creative-ex.png);
 }
-.bg-\[url\(\{\{page\.div_image\}\}\)\] {
-  background-image: url({{page.div_image}});
+.bg-\[url\(\/assets\/images\/yogaSq-1\.png\)\] {
+  background-image: url(/assets/images/yogaSq-1.png);
+}
+.bg-\[url\(\/assets\/images\/yogaSq-2\.png\)\] {
+  background-image: url(/assets/images/yogaSq-2.png);
 }
 .bg-\[url\(\{\{page\.creative-expressions_image\}\}\)\] {
   background-image: url({{page.creative-expressions_image}});
@@ -1788,17 +1803,8 @@ footer a {
 .bg-\[url\(\{\{page\.yoga-square1_image\}\}\)\] {
   background-image: url({{page.yoga-square1_image}});
 }
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-.bg-\[url\(\/assets\/images\/yogaSq-1\.png\)\] {
-  background-image: url(/assets/images/yogaSq-1.png);
-}
 .bg-\[url\(\{\{page\.yoga-square2_image\}\}\)\] {
   background-image: url({{page.yoga-square2_image}});
-}
-.bg-\[url\(\/assets\/images\/yogaSq-2\.png\)\] {
-  background-image: url(/assets/images/yogaSq-2.png);
 }
 .bg-cover {
   background-size: cover;
@@ -1824,6 +1830,10 @@ footer a {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-2 {
   padding: 0.5rem;
