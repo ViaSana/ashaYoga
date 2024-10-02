@@ -1,6 +1,6 @@
 paths:
   uploads: uploads
-  uploads_use_relative_path: false
+  uploads_use_relative_path: true
   static: ''
   dam_uploads: ''
   dam_static: ''
@@ -37,16 +37,21 @@ collections_config:
     disable_file_actions: false
 _inputs:
   layout:
+    type: auto
     hidden: true
     cascade: true
   hero_position:
+    type: auto
     hidden: true
     cascade: true
   summary_description:
+    type: auto
     label: Summary
-    comment: This description will show up on the home page. 
+    comment: This description will show up on the home page.
+    cascade: true
   class_description:
-    comment: This description will show up on the class page. 
+    type: auto
+    comment: This description will show up on the class page.
     cascade: true
   bio:
     type: textarea
