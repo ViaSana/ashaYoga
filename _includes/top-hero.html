@@ -1,13 +1,17 @@
-<!-- include top-hero -->
-<section class="px-5p max-w-screen-2xl mx-auto bg-[url('{{page.hero_image}}')] {{page.hero_position}} {{page.hero_offset}} bg-cover relative"> 
-        <div class="relative z-20 flex items-center min-h-50 md:min-h-90">
-                <div class="{% if page.hero_offset %} -{{page.hero_offset}} {%endif%}">
-                        <hr class="w-[60%] border -ml-[5vw] border-accent -translate-y-20">
-                        {% if page.subheading %}
-                                <h4 class="uppercase -translate-y-14 text-md">{{page.subheading}}</h4>
-                        {% endif %}
-                        <h1 class="mb-0 text-5xl md:text-8xl text-heading-overlay">{{page.heading}}</h1>
-                </div>
+<!-- Hero Section -->
+<section 
+    class="relative mx-auto max-w-screen-2xl bg-cover hero-section px-5p {{page.hero_offset}}"
+    style="background-image: url('{{page.hero_image}}')"
+    {% if page.hero_position %}data-position="{{page.hero_position}}"{% endif %}
+>
+    <div class="flex relative z-20 items-center min-h-50 md:min-h-90">
+        <div class="{% if page.hero_offset %} -{{page.hero_offset}} {% endif %}">
+            <hr class="decorative-line w-3/5 border border-accent -ml-[5vw] -translate-y-20">
+            {% if page.subheading %}
+                <h2 class="uppercase -translate-y-14 text-md">{{page.subheading}}</h2>
+            {% endif %}
+            <h1 class="mb-0 text-5xl heading md:text-8xl text-heading-overlay">{{page.heading}}</h1>
         </div>
-        <div class="absolute inset-0 opacity-60 bg-base-100 sm:hidden"></div>
+    </div>
+    <div class="absolute inset-0 opacity-60 overlay bg-base-100 sm:hidden"></div>
 </section> 
