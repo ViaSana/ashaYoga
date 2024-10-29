@@ -1,19 +1,114 @@
+<!-- Contact Form -->
 <section class="p-5p">
-    <form class="grid max-w-4xl gap-6 mx-auto">
-        
-        <input class="py-1 bg-transparent border-b border-accent placeholder:uppercase placeholder:text-secondary text-secondary" 
-        type="text" name="name" placeholder="Name" aria-label="Name">
-        
-        <input class="py-1 bg-transparent border-b border-accent placeholder:uppercase placeholder:text-secondary text-secondary" 
-        type="email" name="email" placeholder="Email" aria-label="email">
+    <form class="grid gap-6 mx-auto max-w-4xl" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
+        <!-- Required: Your Access Key for Web3Forms -->
+        <input type="hidden" name="access_key" value="341eaf4a-25bf-406b-a32b-86f9fde30cd2">
+        <!-- Subject -->
+        <input type="hidden" name="subject" value="New Submission from AshaYogaKY.com">
+        <!-- Hidden botcheck field -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+        <!-- Name Field -->
+        <input  class="py-1 bg-transparent border-b border-accent placeholder:uppercase placeholder:text-secondary text-secondary" 
+                type="text"
+                id="name" 
+                name="name" 
+                placeholder="Name" 
+                aria-label="Enter your name">
+
+        <!-- Email Field -->
+        <input  class="py-1 bg-transparent border-b border-accent placeholder:uppercase placeholder:text-secondary text-secondary" 
+                type="email"
+                id="email"
+                name="email" 
+                placeholder="Email" 
+                required 
+                aria-required="true" 
+                aria-label="Enter your email">
+
+        <!-- Message Field -->
         <div>
             <label class="block uppercase" for="message">Message</label>
-            <textarea class="w-full p-2 pb-4 bg-transparent border border-accent placeholder:uppercase placeholder:text-secondary text-secondary" id="message" name="message" ></textarea>
+            <textarea class="p-2 pb-4 w-full bg-transparent border border-accent placeholder:uppercase placeholder:text-secondary text-secondary" 
+                      id="message" 
+                      name="message"
+                      aria-label="Share your message">
+            </textarea>
         </div>
-        
+
+        <!-- Submit button -->
         <div class="-mt-2 text-right">
             <button class="btn btn-primary" type="submit">Send</button>
         </div>
     </form>
+    <div id="thanks" class="hidden flex justify-center flex-col mt-6 text-center min-h-[400px]">
+        <h3 class="text-2xl font-bold">Thanks for reaching out! We'll get back to you as soon as we can</h3>
+        <p>~ AshaYoga ~</p>
+    </div>
 </section>
+
+<script>
+const form = document.getElementById('contactForm');
+const thanks = document.getElementById('thanks');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const object = {};
+
+    formData.forEach((value, key) => {
+        // Remove '[]' from the key if present
+        key = key.replace('[]', '');
+
+        if (object[key]) {
+            // If the key already exists, push the new value into an array
+            if (!Array.isArray(object[key])) {
+                object[key] = [object[key]];
+            }
+            object[key].push(value);
+        } else {
+            // If the key doesn't exist, create it
+            object[key] = value;
+        }
+    });
+
+    // Optionally, join array values into a comma-separated string
+    for (let key in object) {
+        if (Array.isArray(object[key])) {
+            object[key] = object[key].join(', ');
+        }
+    }
+
+    const json = JSON.stringify(object);
+
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: json
+    })
+    .then(async (response) => {
+        if(response.status === 200) {
+            form.classList.add('hidden');
+            thanks.classList.remove('hidden');
+        } else {
+            console.log(response);
+            alert("There was a problem with your submission. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.log(error);
+        alert("There was a problem with your submission. Please try again.");
+    })
+    .then(function() {
+        form.reset();
+        setTimeout(() => {
+            thanks.classList.add('hidden');
+            form.classList.remove('hidden');
+        }, 5000); // Hide thanks message after 5 seconds
+    });
+});
+</script>
