@@ -1,15 +1,17 @@
 ---
-layout: default 
+layout: default
 hero_image: /assets/images/classes_hero.png
 hero_position: bg-top
 hero_offset: ml-[30vw]
 heading: Our Classes
 seo:
-    title: "Our Yoga Classes | Asha Yoga in Cave City, KY"
-    description: "Explore a variety of yoga classes at Asha Yoga, including POP Pilates and Yoga Nidra. Suitable for all ages and skill levels in Cave City, KY. Sign up today to enhance your yoga journey."
-    social_image: "/assets/images/class-pilates.png"
+    title: Our Yoga Classes | Asha Yoga in Cave City, KY
+    description: >-
+        Explore a variety of yoga classes at Asha Yoga, including POP Pilates
+        and Yoga Nidra. Suitable for all ages and skill levels in Cave City, KY.
+        Sign up today to enhance your yoga journey.
+    social_image: /assets/images/class-pilates.png
 ---
-
 <section class="mx-auto max-w-screen-xl p-5p">
     <div class="grid gap-4 pb-0 md:pb-4 md:grid-cols-6">
     {% for item in site.data.classes limit:3 %}
@@ -17,7 +19,7 @@ seo:
             <img src="{{item.image}}" alt="Class Image" class="aspect-[6/5] mx-auto mt-2 border border-accent scroll-in-from-bottom" />
             <div class="py-6 grow">
                 <h2 class="pb-6 text-3xl uppercase">{{item.class}}</h2>
-                <hr class="w-full border-t border-accent">
+                <hr class="w-full border-t border-accent" />
                 <p class="px-4 pt-6 mb-0">{{item.class_description}}</p>
             </div>
             <div>
@@ -34,7 +36,7 @@ seo:
             <img src="{{item.image}}" alt="Class Image" class="aspect-[6/5] mt-2 mx-auto border border-accent scroll-in-from-bottom" />
             <div class="py-6 grow">
                 <h2 class="pb-6 text-3xl uppercase">{{item.class}}</h2>
-                <hr class="w-full border-t border-accent">
+                <hr class="w-full border-t border-accent" />
                 <p class="px-4 pt-6 mb-0">{{item.class_description}}</p>
             </div>
             <div>
@@ -50,7 +52,9 @@ seo:
 <!-- Hide this section if site.data.events is empty -->
 {% if site.data.events.size > 0 %}
 <section class="p-5 mx-auto my-8 max-w-screen-xl bg-light">
-    <h2 class="mb-6 text-4xl font-bold text-center text-primary editable">Upcoming Events</h2>
+    <h2 class="mb-6 text-4xl font-bold text-center text-primary editable">
+        Upcoming Events
+    </h2>
     <p class="mx-auto mb-12 max-w-4xl text-xl text-center text-primary editable">
         Join Us For Special Workshops And Sessions Aimed At Enhancing Your Yoga Journey. Don't Forget To Bring Your Mat And A Water Bottle!
     </p>
