@@ -1,12 +1,44 @@
-- image: /assets/images/asha_logo-stacked.png
-  heading: "Asha Yoga Grand Opening"
-  date: "TBD"
-  cost: "FREE"
-  description: "Join us for a day to celebrate the opening of the Shala"
-  signup_url:
-- image: /assets/images/trini_logo-purp.png
-  heading: "Trini Foundation Fundraiser"
-  date: "TBD"
-  cost: "FREE"
-  description: "Help us raise money for this wonderful organization"
-  signup_url:
+- image: ../uploads/manifest-your-future-1.png
+  heading: Manifest Your Year
+  date: 2025-01-01 15:00:00
+  cost: $30
+  description: >-
+    This New Year’s Day event will include creating vision boards, goal setting
+    and grounding ritual, and manifestation-focused Yoga Nidra/meditation. Bring
+    a friend and start your new year in a positive and grounded mindset. All
+    supplies as well as tea and light snacks will be provided.
+  signup_url: https://momence.com/s/110016208
+- image: ../uploads/introduction-to-pilates-with-eleni.png
+  heading: Introduction to Pilates
+  date: 2025-01-11 11:00:00
+  cost: Regular Drop-In Rate
+  description: >-
+    Join Eleni for a morning of Pilates basics. If you're new to Pilates, you'll
+    have the opportunity to explore foundational moves in a fun, welcoming, and
+    low pressure environment! If you already know and love Eleni's classes, this
+    is a chance to dig into the moves and master your form. This class is
+    suitable for all levels, as long as you are able to comfortably move from
+    the mat to standing. Ready to start something new? Join us for this
+    workshop!
+  signup_url: https://momence.com/s/110849773
+- image: ../uploads/1.png
+  heading: 'Yoga 101: Introduction to Yoga'
+  date: 2025-01-12 14:00:00
+  cost: Varies for current and new students.
+  description: >-
+    This 3-part workshop series will cover the origins and 8-limb philosophy,
+    asanas (postures), alignment, moving meditation, and creating and
+    maintaining a sustainable yoga practice. You can attend one session but
+    attending the series is suggested. Anyone new to Asha Yoga will receive a
+    3-class pass!
+  signup_url: https://momence.com/s/110714389
+- image: >-
+    ../uploads/green-and-brown-illustrated-ayurveda-day-instagram-story-facebook-post.png
+  heading: Introduction to Ayurveda with Ashley Kenney
+  date: 2025-01-25 10:30:00
+  cost: $40
+  description: >-
+    This 2 hour workshop, led by Ashley Kenney, with quick dive into the history
+    and application of the principles of this ancient practice. Attendees will
+    leave with knowledge of their dosha and how to begin an Ayurvedic journey.
+  signup_url: https://momence.com/s/108914401
