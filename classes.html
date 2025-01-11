@@ -64,7 +64,7 @@ seo:
             <img src="{{ event.image }}" alt="Event Image" class="aspect-[10/9] mx-12 border md:w-1/4 mb-4 border-accent" />
             <div class="text-left md:w-2/3">
                 <h2 class="mb-2 text-3xl uppercase">{{ event.heading }}</h2>
-                <p class="mb-2 text-lg"><strong>Date:</strong> {{ event.date }} | <strong>Cost:</strong> {{ event.cost }}</p>
+                <p class="mb-2 text-lg"><strong>Date:</strong> {{ event.date | date: "%b. %-d %l%P" }} | <strong>Cost:</strong> {{ event.cost }}</p>
                 <p class="mb-4 text-md">
                     {{ event.description }}
                 </p>
