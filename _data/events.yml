@@ -1,13 +1,3 @@
-- image: >-
-    ../uploads/green-and-brown-illustrated-ayurveda-day-instagram-story-facebook-post.png
-  heading: Introduction to Ayurveda with Ashley Kenney
-  date: 2025-01-25 10:30:00
-  cost: $40
-  description: >-
-    This 2 hour workshop, led by Ashley Kenney, with quick dive into the history
-    and application of the principles of this ancient practice. Attendees will
-    leave with knowledge of their dosha and how to begin an Ayurvedic journey.
-  signup_url: https://momence.com/s/108914401
 - image: ../uploads/make-kombucha-at-home.png
   heading: Brew Your Own Kombucha
   date: 2025-02-07 17:30:00
@@ -44,3 +34,12 @@
     supplements and tools, facial exercises, massages, and lymphatic drainage
     videos.
   signup_url: https://momence.com/s/112140744
+- image: >-
+    ../uploads/orange-brown-vintage-lotus-flower-vesak-day-card-instagram-post.png
+  heading: Sangha (Community) Saturday
+  date: 2025-02-15 10:15:00
+  cost: Free
+  description: >-
+    Join us every 3rd Saturday for a sangha (community) gathering.! Bring a
+    potluck item or just join us for conversation and friendship.
+  signup_url: ''
