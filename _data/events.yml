@@ -1,13 +1,3 @@
-- image: ../uploads/make-kombucha-at-home.png
-  heading: Brew Your Own Kombucha
-  date: 2025-02-07 17:30:00
-  cost: $20
-  description: >-
-    This workshop, led by Jeanna Smith of Mammoth Valley, will guide you
-    throughh the process of creating your very own fizzy, probiotic beverage at
-    home! You will leave with guidelines, confidence, and a SCOBY of your very
-    own! Attendees will receive 10% off all teas at Asha Yoga!
-  signup_url: https://momence.com/s/111957206
 - image: ../uploads/img-7092.png
   heading: Face Yoga Workshop
   date: 2025-02-22 11:30:00
@@ -34,10 +24,32 @@
     supplements and tools, facial exercises, massages, and lymphatic drainage
     videos.
   signup_url: https://momence.com/s/112140744
+- image: ../uploads/buti-yoga.png
+  heading: Buti Yoga with Craig Lonas
+  date: 2025-03-01 15:01:00
+  cost: $20
+  description: >-
+    Ignite your inner FIRE! Buti is a HIGH energy movement class that combines
+    yoga asana, deep internal toning, cardio dancing and dynamic strength
+    conditioning all set to a heart pounding playlist. This passionate
+    experience will have you drumming the mat, singing empowering lyrics, and
+    howling before hitting your final resting pose where it is not uncommon to
+    feel the tears flow.
+  signup_url: https://momence.com/s/112915296
+- image: ../uploads/introduction-to-ashtanga-1080-x-1350-px.png
+  heading: Introduction to Ashtanga
+  date: 2025-03-02 09:00:00
+  cost: $25
+  description: >-
+    We will learn about the origins if the ashtanga method, as well as key
+    points about the practice and walk through postures of the primary series.
+    This is great for beginners and those who have been taking our Mysore class
+    but would like to know more about Ashtanga.
+  signup_url: https://momence.com/s/112535310
 - image: >-
-    ../uploads/orange-brown-vintage-lotus-flower-vesak-day-card-instagram-post.png
+    ../uploads/orange-brown-vintage-lotus-flower-vesak-day-card-instagram-post-1.png
   heading: Sangha (Community) Saturday
-  date: 2025-02-15 10:15:00
+  date: 2025-03-15 10:15:00
   cost: Free
   description: >-
     Join us every 3rd Saturday for a sangha (community) gathering.! Bring a
