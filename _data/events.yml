@@ -1,12 +1,3 @@
-- image: >-
-    ../uploads/orange-brown-vintage-lotus-flower-vesak-day-card-instagram-post-logo.png
-  heading: Sangha (Community) Saturday
-  date: 2025-03-15 10:15:00
-  cost: Free
-  description: >-
-    Join us every 3rd Saturday for a sangha (community) gathering.! Bring a
-    potluck item or just join us for conversation and friendship.
-  signup_url: ''
 - image: ../uploads/mindfulness-2.png
   heading: Mindfulness Hike
   date: 2025-05-04 09:00:00
@@ -48,3 +39,35 @@
 
     We’d love to have you join us!
   signup_url: https://momence.com/s/116193561
+- image: >-
+    ../uploads/orange-brown-vintage-lotus-flower-vesak-day-card-instagram-post-logo.png
+  heading: Sangha (Community) Saturday
+  date: 2025-03-15 10:15:00
+  cost: Free
+  description: >-
+    Join us every 3rd Saturday for a sangha (community) gathering.! Bring a
+    potluck item or just join us for conversation and friendship.
+  signup_url: ''
+- image: ../uploads/happy-friendship-day.png
+  heading: Zen & Tonic at Ace Alley
+  date: 2025-05-29 18:00:00
+  cost: $20
+  description: >-
+    Zen & Tonic Yoga at Ace Alley
+
+    Join us for an evening of movement, mindfulness, and a little bit of
+    mischief! For just $20, enjoy a fun, all-levels yoga class led by Sarah from
+    Asha Yoga, followed by your choice of a delicious cocktail, wine, or
+    refreshing mocktail crafted by Ace Coffee Co.
+
+
+    Come stretch, sip, and soak in the good vibes at Ace Alley — the perfect way
+    to unwind and recharge. Bring your mat and a friend!
+
+
+    When: May 29, 2025 at 6pm
+
+    Where: Ace Alley
+
+    Cost: $20 (includes class + drink)
+  signup_url: https://momence.com/s/116196415
