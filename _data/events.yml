@@ -1,25 +1,3 @@
-- image: ../uploads/stroller-fit.png
-  heading: Stroller Fit Pop-Up
-  date: 2025-06-04 09:00:00
-  cost: Free for members\donation-based for non-members
-  description: >-
-    WE WILL MEET AT BEAVER TRAIL PARK FOR THIS EVENT.  Join Eleni for a
-    45-minute Stroller Fit class designed for parents and caregivers! We’ll
-    combine brisk walking with bodyweight exercises—all while your little one
-    enjoys the ride in their stroller. It’s a great way to get moving, connect
-    with others, and enjoy the outdoors. All fitness levels welcome. Don’t
-    forget your stroller, water, and a smile!
-  signup_url: https://momence.com/s/117533484
-- image: ../uploads/journaling-workshop.png
-  heading: The Art of Journaling
-  date: 2025-05-18 15:30:00
-  cost: Suggested donation $20
-  description: >-
-    Discover the purpose, techniques, and impact of journaling in everyday life.
-    Whether you're new to journaling or an experienced diarist, this 75-minute
-    session—led by our movement teachers, Eleni and Sarah—will explore a variety
-    of styles and approaches to support and inspire your personal practice.
-  signup_url: https://momence.com/s/116163940
 - image: ../uploads/happy-friendship-day.png
   heading: Zen & Tonic at Ace Alley
   date: 2025-05-29 18:00:00
@@ -43,3 +21,15 @@
 
     Cost: $20 (includes class + drink)
   signup_url: https://momence.com/s/116196415
+- image: ../uploads/stroller-fit.png
+  heading: Stroller Fit Pop-Up
+  date: 2025-06-04 09:00:00
+  cost: Free for members\donation-based for non-members
+  description: >-
+    WE WILL MEET AT BEAVER TRAIL PARK FOR THIS EVENT.  Join Eleni for a
+    45-minute Stroller Fit class designed for parents and caregivers! We’ll
+    combine brisk walking with bodyweight exercises—all while your little one
+    enjoys the ride in their stroller. It’s a great way to get moving, connect
+    with others, and enjoy the outdoors. All fitness levels welcome. Don’t
+    forget your stroller, water, and a smile!
+  signup_url: https://momence.com/s/117533484
