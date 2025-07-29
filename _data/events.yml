@@ -1,11 +1,3 @@
-- image: ../uploads/detox-your-life-3.png
-  heading: Yoga at The Grove with Sarah
-  date: 2025-08-02 10:00:00
-  cost: Donation $10-15
-  description: >-
-    Join Sarah Davis at The Grove in Glasgow, KY for an outdoor flow in a great
-    venue!
-  signup_url: ''
 - image: >-
     ../uploads/asha-yoga-s-first-day-retreat-coming-soon-3-x-6-in-instagram-post-45.png
   heading: 'Refresh and Rewild: Yoga in Nature Day Retreat'
@@ -18,6 +10,28 @@
     rhythms in the natural world. (Apologies, there will be moderate hiking and
     creek wading that is not handicap accessible.)
   signup_url: https://momence.com/s/119418871
+- image: ../uploads/detox-your-life-3.png
+  heading: Yoga at The Grove with Sarah
+  date: 2025-08-02 10:00:00
+  cost: Donation $10-15
+  description: >-
+    Join Sarah Davis at The Grove in Glasgow, KY for an outdoor flow in a great
+    venue!
+  signup_url: ''
+- image: ../uploads/stroller-fit-5.png
+  heading: Stroller Fit at The Park
+  date:
+  cost: >-
+    Free for members\donation-based for non-members- Every Wednesday in good
+    weather!
+  description: >-
+    WE WILL MEET AT BEAVER TRAIL PARK FOR THIS EVENT.  Join Eleni for a
+    45-minute Stroller Fit class designed for parents and caregivers! We’ll
+    combine brisk walking with bodyweight exercises—all while your little one
+    enjoys the ride in their stroller. It’s a great way to get moving, connect
+    with others, and enjoy the outdoors. All fitness levels welcome. Don’t
+    forget your stroller, water, and a smile!
+  signup_url: https://ashayogaky.com/schedule
 - image: ../uploads/happy-friendship-day-3.png
   heading: Zen & Tonic at Ace Alley
   date: 2025-08-16 09:00:00
@@ -50,20 +64,6 @@
     Come ready to move, mingle, and enjoy a beautiful summer morning in
     community.
   signup_url: https://momence.com/s/118061006
-- image: ../uploads/stroller-fit-5.png
-  heading: Stroller Fit at The Park
-  date:
-  cost: >-
-    Free for members\donation-based for non-members- Every Wednesday in good
-    weather!
-  description: >-
-    WE WILL MEET AT BEAVER TRAIL PARK FOR THIS EVENT.  Join Eleni for a
-    45-minute Stroller Fit class designed for parents and caregivers! We’ll
-    combine brisk walking with bodyweight exercises—all while your little one
-    enjoys the ride in their stroller. It’s a great way to get moving, connect
-    with others, and enjoy the outdoors. All fitness levels welcome. Don’t
-    forget your stroller, water, and a smile!
-  signup_url: https://ashayogaky.com/schedule
 - image: ../uploads/alignment-adjustments.png
   heading: Alignment and Adjustments Workshop
   date: 2025-08-23 11:00:00
