@@ -1,18 +1,5 @@
-- name: Eleni Georgiadis
-  image: ../uploads/dsc-2693.jpg
-  certification: CPT
-  instagram: https://www.instagram.com/eleni.v.g
-  bio: >-
-    Eleni Georgiadis began teaching POP Pilates during the pandemic, channeling
-    her enthusiasm for group fitness and movement. As a classically trained
-    musician, she discovered a passion for teaching during the lockdown. Eleni's
-    upbeat and engaging classes offer a full-body workout with a strong focus on
-    mobility and core strength, welcoming all levels and building a community
-    around fitness. Away from the mat, she enjoys gardening, hiking, and playing
-    the French horn. Eleni and her husband are raising two dogs and a fresh baby
-    in Glasgow, where they are proud to call home.
 - name: Sarah Davis
-  image: ../uploads/dsc-3568.jpg
+  image: ../uploads/dsc-3568-bright.jpg
   certification: RYT-200
   instagram: https://www.instagram.com/theyogacowgirl
   bio: >-
@@ -25,8 +12,21 @@
     the mind and calm the body. Outside of yoga, she enjoys trail riding, paddle
     boarding, hiking with her dogs, live music, and spending time at her family
     farm.
+- name: Eleni Georgiadis
+  image: ../uploads/dsc-2681-bright.jpg
+  certification: CPT
+  instagram: https://www.instagram.com/eleni.v.g
+  bio: >-
+    Eleni Georgiadis began teaching POP Pilates during the pandemic, channeling
+    her enthusiasm for group fitness and movement. As a classically trained
+    musician, she discovered a passion for teaching during the lockdown. Eleni's
+    upbeat and engaging classes offer a full-body workout with a strong focus on
+    mobility and core strength, welcoming all levels and building a community
+    around fitness. Away from the mat, she enjoys gardening, hiking, and playing
+    the French horn. Eleni and her husband are raising two dogs and a fresh baby
+    in Glasgow, where they are proud to call home.
 - name: Stefany Vaughn Mack
-  image: ../uploads/dsc-2401.jpg
+  image: ../uploads/dsc-2365-bright.jpg
   certification: LPCC-S, RYT-500
   instagram: https://www.instagram.com/smackany
   bio: >-
