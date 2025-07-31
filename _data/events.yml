@@ -10,14 +10,6 @@
     rhythms in the natural world. (Apologies, there will be moderate hiking and
     creek wading that is not handicap accessible.)
   signup_url: https://momence.com/s/119418871
-- image: ../uploads/detox-your-life-1.png
-  heading: Yoga at The Grove with Sarah
-  date: 2025-08-23 10:00:00
-  cost: Donation $10-15
-  description: >-
-    Join Sarah Davis at The Grove in Glasgow, KY for an outdoor flow in a great
-    venue!
-  signup_url: ''
 - image: ../uploads/stroller-fit-5.png
   heading: Stroller Fit at The Park
   date:
@@ -64,9 +56,9 @@
     Come ready to move, mingle, and enjoy a beautiful summer morning in
     community.
   signup_url: https://momence.com/s/118061006
-- image: ../uploads/alignment-adjustments.png
+- image: ../uploads/alignment-adjustments-1.png
   heading: Alignment and Adjustments Workshop
-  date: 2025-08-23 11:00:00
+  date: 2025-08-23 11:30:00
   cost: $30 for Students/$65 for Yoga Alliance CEUs
   description: >-
     Join us for a deep dive into the art and science of Alignments and
@@ -93,3 +85,11 @@
     Perfect for yoga teachers, teacher trainees, and curious students alike.
     Space is limited—reserve your spot early!
   signup_url: https://momence.com/s/120380918
+- image: ../uploads/detox-your-life-1.png
+  heading: Yoga at The Grove with Sarah
+  date: 2025-08-23 10:00:00
+  cost: Donation $10-15
+  description: >-
+    Join Sarah Davis at The Grove in Glasgow, KY for an outdoor flow in a great
+    venue!
+  signup_url: ''
